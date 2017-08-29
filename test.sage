@@ -1,3 +1,4 @@
+print "The Petersen graph is 3 colorable."
 g=graphs.PetersenGraph()
-print("Hello world!")
-g.show()
+coloring = g.coloring(hex_colors=True)
+g.show(vertex_labels=False,vertex_colors=coloring)
